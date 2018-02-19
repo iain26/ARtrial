@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GPSlocations : MonoBehaviour {
 
-    public static GPSlocations curGPS { set; get; }
+    public static GPSlocations currentGPS { set; get; }
 
     float longitude;
     float latitude;
@@ -44,7 +44,7 @@ public class GPSlocations : MonoBehaviour {
                 latitude = Input.location.lastData.latitude;
             }
         }
-        curGPS = this;
+        currentGPS = this;
     }
 
     public void GetGPS()
@@ -97,7 +97,7 @@ public class GPSlocations : MonoBehaviour {
 
         if(longitude  < longRange[0] || longitude > longRange[1])
         {
-            CarButton.SetActive(false);
+            //CarButton.SetActive(false);
         }
         else
         {

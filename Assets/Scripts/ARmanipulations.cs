@@ -17,23 +17,23 @@ public class ARmanipulations : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        UMPText.SetActive(false);
-        SoldierText.SetActive(false);
-        if (Input.touchCount > 0)
-        {
-            ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-            RaycastHit hit = new RaycastHit();
-            if (Physics.Raycast(ray, out hit))
-            {
-                if (hit.collider.name == "UMP")
-                {
-                    UMPText.SetActive(true);
-                }
-                if (hit.collider.name == "Soldier")
-                {
-                    SoldierText.SetActive(true);
-                }
-            }
-        }
+        //UMPText.SetActive(false);
+        //SoldierText.SetActive(false);
+        //if (Input.touchCount > 0)
+        //{
+        //    ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+        //    RaycastHit hit = new RaycastHit();
+        //    if (Physics.Raycast(ray, out hit))
+        //    {
+        //        if (hit.collider.name == "UMP")
+        //        {
+        //            UMPText.SetActive(true);
+        //        }
+        //        if (hit.collider.name == "Soldier")
+        //        {
+        //            SoldierText.SetActive(true);
+        //        }
+        //    }
+        //}
     }
 }
